@@ -1,0 +1,333 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .background {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.7;
+    position: fixed;
+    z-index: -5;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust the height as needed */
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 450px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: "Fustat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 3px;
+  }
+  
+.logo-1,.logo-2 {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  text-wrap: wrap;
+  line-height: 5px;
+} 
+.logo-1 {
+  padding-top: 10px;
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+.logo-2 {
+  letter-spacing: 6px;
+}
+
+.logo {
+  padding: 0px !important;
+}
+
+.hero {
+  width: 99%;
+  background-color: #555;
+  border-radius: 5px;
+  margin: 30px auto;
+}
+.tag-container {
+  display: flex;
+  justify-content: space-between;
+}
+.tagline {
+  width: 50%;
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 80px;
+  font-weight: 700;
+  color: white;
+  font-style: normal;
+  margin: 0px 50px;
+  padding: 30px 0px;
+}
+.tag-2 {
+  text-align: center;
+  color: white;
+  font-family: serif;
+}
+.illus {
+  width: 20%;
+  height: auto;
+  margin-right: 100px;
+}
+.buy-sell {
+  display: flex;
+  justify-content: center;
+}
+.buy-button, .sell-button {
+  width: 40%;
+  text-align: center;
+  background-color: rgb(255, 255, 28);
+  padding: 20px 0px;
+  border: 2px solid black;
+  
+}
+.buy-button {
+  border-radius: 50px 0px 0px 50px;
+  border-right: 1px solid black;
+}
+.buy-button:hover {
+  border-radius: 50px 0px 0px 50px;
+  border-right: 1px solid black;
+  background-color: rgb(13, 220, 13);
+  cursor: pointer;
+}
+.sell-button {
+  border-radius: 0px 50px 50px 0px;
+  border-left: 1px solid black;
+}
+.sell-button:hover {
+  border-radius: 0px 50px 50px 0px;
+  border-left: 1px solid black;
+  background-color: rgb(13, 220, 13);
+  cursor: pointer;
+}
+
+.about-us {
+  background-color: white;
+}
+.abt-title {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.abt-contain {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.abt-desc {
+  width: 30%;
+  font-size: 25px;
+}
+
+.buy {
+  height: 100vh;
+}
+.search-container {
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: auto;
+}
+
+.search-container input[type="text"] {
+  border: none;
+  padding: 10px;
+  width: 300px; /* Adjust width as needed */
+  border-radius: 20px 0 0 20px;
+  font-size: 16px;
+  width: 92%;
+}
+
+.search-container button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-container button:hover {
+  background-color: #45a049;
+}
+.contact {
+  background-color: white;
+}
+.con-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+.sign-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.phone-signup-form {
+  margin: auto;
+  width: 70%;
+}
+.phone-signup-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.phone-signup-form input[type="tel"],
+.phone-signup-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.phone-signup-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 30%;
+}
+
+.phone-signup-form button:hover {
+  background-color: #45a049;
+}
+.con-title {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding-top: 150px;
+}
+.social-logos {
+  height: 30px;
+  width: auto;
+}
