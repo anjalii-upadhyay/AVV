@@ -9,11 +9,16 @@ body {
     opacity: 0.7;
     position: fixed;
     z-index: -5;
+    top: 7vh;
   }
   
   header {
     background-color: #333;
     color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
   }
   
   .container {
@@ -26,8 +31,9 @@ body {
   }
   
   .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px; 
   }
+
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -46,14 +52,43 @@ body {
     text-decoration: none;
     padding: 10px 15px;
     font-family: "Fustat", sans-serif;
-    font-optical-sizing: auto;
+    font-size:larger;
     font-weight: 500;
     font-style: normal;
   }
   
   nav ul li a:hover {
-    background-color: #555;
-    border-radius: 3px;
+    background-color: #8189A8;
+    border-radius: 30px;
+    border-color: #c6a088;
+    border-width: 200000px;
+  }
+
+  nav ul li a:hover {
+    background-color: #8189A8;
+    border-radius: 30px;
+    /* border-color: #c6a088;
+    border-width: 200000px; */
+  }
+
+  nav ul li ul.dropdown li{
+    display: block;
+    background: #333 ;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 150px;
+  }
+
+  nav ul li ul.dropdown{
+    width: 10%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    margin-top: 0.6%;
+  }
+
+  nav ul li:hover ul.dropdown{
+    display: block;
   }
   
 .logo-1,.logo-2 {
@@ -63,12 +98,14 @@ body {
   text-wrap: wrap;
   line-height: 5px;
 } 
+
 .logo-1 {
   padding-top: 10px;
   font-family: "Bona Nova SC", serif;
   font-weight: 400;
   font-style: normal;
 } 
+
 .logo-2 {
   letter-spacing: 6px;
 }
@@ -83,35 +120,45 @@ body {
   border-radius: 5px;
   margin: 30px auto;
 }
+
 .tag-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 8%;
 }
+
 .tagline {
   width: 50%;
   font-family: "Fustat", sans-serif;
   font-optical-sizing: auto;
-  font-size: 80px;
+  font-size: 85px;
   font-weight: 700;
   color: white;
   font-style: normal;
   margin: 0px 50px;
   padding: 30px 0px;
 }
+
 .tag-2 {
   text-align: center;
   color: white;
   font-family: serif;
 }
+
 .illus {
-  width: 20%;
+  width:25%;
   height: auto;
   margin-right: 100px;
+  margin-top: 2%;
+  border-radius: 2%;
+  //opacity: 50% ;
 }
+
 .buy-sell {
   display: flex;
   justify-content: center;
 }
+
 .buy-button, .sell-button {
   width: 40%;
   text-align: center;
@@ -127,7 +174,7 @@ body {
 .buy-button:hover {
   border-radius: 50px 0px 0px 50px;
   border-right: 1px solid black;
-  background-color: rgb(13, 220, 13);
+  background-color: #eaedf6;
   cursor: pointer;
 }
 .sell-button {
@@ -137,13 +184,15 @@ body {
 .sell-button:hover {
   border-radius: 0px 50px 50px 0px;
   border-left: 1px solid black;
-  background-color: rgb(13, 220, 13);
+  background-color: #eaedf6;
   cursor: pointer;
 }
 
 .about-us {
-  background-color: white;
+  background-color: #39393B;
+  color: white;
 }
+
 .abt-title {
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -151,24 +200,31 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  margin-bottom: 1%;
+  margin-top: 10%;
 }
+
 .abt-contain {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
-
 }
-.abt-desc {
-  width: 80%;
-  font-size: 20px;
-  /* margin: 0px 100px 0px 400px; */
-  margin: auto;
-  margin-bottom: 100px;
+
+.abt-desc-con {
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: large;
+}
+
+.abt-desc-con h2{
+  font-size: 1.5em;
 }
 
 .buy {
   height: 100vh;
 }
+
 .search-container {
   display: flex;
   background-color: #fff;
@@ -182,7 +238,7 @@ body {
 .search-container input[type="text"] {
   border: none;
   padding: 10px;
-  width: 300px; /* Adjust width as needed */
+  width: 300px; 
   border-radius: 20px 0 0 20px;
   font-size: 16px;
   width: 92%;
@@ -201,9 +257,11 @@ body {
 .search-container button:hover {
   background-color: #45a049;
 }
+
 .contact {
-  background-color: white;
+  background-color: #EAEDF6;
 }
+
 .con-container {
   max-width: 800px;
   margin: 0 auto;
@@ -271,56 +329,7 @@ form button {
 form button:hover {
   background-color: #45a049;
 }
-.sign-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 50px 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-.sign-container h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.phone-signup-form {
-  margin: auto;
-  width: 70%;
-}
-.phone-signup-form h3 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.phone-signup-form input[type="tel"],
-.phone-signup-form button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.phone-signup-form button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 30%;
-}
-
-.phone-signup-form button:hover {
-  background-color: #45a049;
-}
 .con-title {
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -330,6 +339,7 @@ form button:hover {
   font-style: normal;
   padding-top: 150px;
 }
+
 .social-logos {
   height: 30px;
   width: auto;

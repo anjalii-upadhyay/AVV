@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .background {
+    width: 100%;
+    height: 100%;
+    opacity: 0.67;
+    position: fixed;
+    z-index: -5;
+    top: 12vh;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust the height as needed */
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 450px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: "Fustat", sans-serif;
+    font-size:larger;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  nav ul li a:hover {
+    background-color: #8189A8;
+    border-radius: 30px;
+    /* border-color: #c6a088;
+    border-width: 200000px; */
+  }
+
+  nav ul li ul.dropdown li{
+    display: block;
+    background: #333 ;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 150px;
+  }
+
+  nav ul li ul.dropdown{
+    width: 10%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    margin-top: 0.6%;
+  }
+
+  nav ul li:hover ul.dropdown{
+    display: block;
+  }
+  
+.logo-1,.logo-2 {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  text-wrap: wrap;
+  line-height: 5px;
+} 
+
+.logo-1 {
+  padding-top: 10px;
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+.logo-2 {
+  letter-spacing: 6px;
+}
+
+.logo {
+  padding: 0px !important;
+}
+
+.aboutUs{
+    margin-top: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #eaedf690;
+    border-radius: 4vw;
+}
+
+.abt-text{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: larger;
+}
+
+.abt-text span{
+    font-size: 1.25em;
+}
+
+.heading{
+    font-size: 3em;
+}
+
+.services{
+    margin-left: 5vh;
+}
