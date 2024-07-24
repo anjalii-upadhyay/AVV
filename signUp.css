@@ -112,33 +112,41 @@ body {
 }
 
 .sign-container {
-    width: 80%;
+    width: 50%;
     margin-top: 10%;
     padding: 50px 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #3333335d;
+    margin-bottom: 4%;
   }
   
   .sign-container h1 {
     text-align: center;
-    margin-bottom: 50px;
+    color: black;
+    margin-bottom: 6vh;
   }
   
   .phone-signup-form {
     margin: auto;
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .phone-signup-form h2 {
     text-align: center;
     margin-bottom: 30px;
+    color: black;
   }
   
-  .phone-signup-form input[type="tel"],
+  .phone-signup-form input,
   .phone-signup-form button {
-    width: 100%;
+    width: 60%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 4vh;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -156,7 +164,9 @@ body {
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 30%;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+    width: 40%;
   }
   
   .phone-signup-form button:hover {
