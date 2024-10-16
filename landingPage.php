@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+    include('db.php');
+?>
+
+
+<!DOCTYPE php>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,35 +20,36 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1 class="logo-1">AVV</h1>
-                <h5 class="logo-2">Available Venue Vyavastha</h5>
+                <h1 class="logo-1">PRESTIGE</h1>
+                <h6 class="logo-2">PROPERTIES</h6>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li>
-                      <a href="#">Services ▾</a>
+                      <a href="#">Services ▼</a>
                       <ul class= dropdown>
-                        <li><a href="hostel.html">Hostels</a></li>
-                        <li><a href="flat.html">Apartments</a></li>
+                        <li><a href="buyProp.php">Buy Property</a></li>
+                        <li><a href="rentProp.php">Rent Property</a></li>
+                        <li><a href="sellProp.php">Sell Property</a></li>
                       </ul>
                     </li>
-                    <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="login.html">Login / Sign Up</a></li>
+                    <li><a href="aboutUs.php">About Us</a></li>
+                    <li><a href="login.php">Logout</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <img src="/images/index3.jpg" alt="" class="background">
+    <img src="/images/landingHouse.jpg" alt="" class="background">
 
     <section id="hero" class="hero">
         <div class="tag-container">
-            <h1 class="tagline">Where Convenience Meets Comfort: Bringing You Closer to Home</h1>
+            <h1 class="tagline">WELCOME USER!  GREETINGS OF THE DAY! </h1>
         </div>
-        <h2 class="tag-2">Ready to ditch the housing hassle and focus on acing college life?</h2>
+        <h2 class="tag-2">Ready to delegate your property buying, and selling needs so you can focus on your family and career?</h2>
         <div class="buy-sell">
-            <h2 class="buy-button">HOSTEL</h2>
-            <h2 class="sell-button">FLATS</h2>
+            <h2 class="buy-button">BUY</h2>
+            <h2 class="sell-button">SELL</h2>
         </div>
     </section>
 
@@ -52,29 +58,29 @@
         <div class="abt-contain">
             <div class="abt-desc-con">
                 <p class="abt-desc">
-                <h2>Welcome to Your Perfect Student Home</h2> Experience Hassle-Free Hostel and Flat Hunting <br><br>
-
-                As your dedicated housing partners, we take care of everything from exploring options to finalizing your stay. Our expert team ensures a smooth, stress-free journey so you can concentrate on your studies and campus life.<br><br>
-
-                <h2>Why Choose Us?</h2>
-
-                <b>Expert Guidance:</b> We’re here to help you every step of the way!<br>
-                <b>Personalized Choices:</b> We customize our approach to fit your unique needs.<br>
-                <b>Trusted Support:</b> Your housing experience is in reliable hands.<br><br>
-
-                <h2>Join Our Community</h2>
-
-                Focus on what matters most while we handle your housing needs. Sign up now for exclusive access to the latest listings and personalized recommendations!
-
+                  <h2>Welcome to Your Dream Home</h2>
+                    Experience Stress-Free Property Transactions <br><br>
+                    
+                    As your dedicated real estate partners, we handle every aspect of renting, buying, and selling properties with precision and care. From initial consultations to market analysis, negotiations, and closing deals, our expert team ensures a smooth and hassle-free experience. <br><br>
+                    
+                    <h2>Why Choose Us?</h2>
+                    
+                    <b>Expert Guidance:</b> We provide professional support every step of the way.<br>
+                    <b>Personalized Service:</b> We tailor our approach to your unique needs.<br>
+                    <b>Trusted Experience:</b> Your investments are in capable hands <br><br>
+                    <h2>Join Our Community</h2>
+                    
+                    
+                    Focus on what matters most while we handle your real estate needs. Sign up now for exclusive access to our latest listings and personalized property recommendations.</p>
             </div>
             
-            <img src="/images/studentsInHostel.jpg" alt="" class="abt-img">
+            <img src="/images/4309581.webp" alt="" class="abt-img">
         </div>
         
     </section>
 
     <section id="buy" class="buy">
-        <h1 class="abt-title">SEARCH HOSTELS NEAR YOU</h1>
+        <h1 class="abt-title">SEARCH PROPERTIES NEAR YOU</h1>
         <div class="search-container">
             <input type="text" placeholder="Search...">
             <button type="submit">Search</button>
@@ -106,4 +112,4 @@
         </div>
       </section>
 </body>
-</html>
+</php>

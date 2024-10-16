@@ -9,13 +9,13 @@ body {
     opacity: 1;
     position: fixed;
     z-index: -5;
-    top: 7vh;
+    bottom: 0vh;
   }
   
   header {
-    background-color: #333;
+    background-color: #393e6a94;
     color: #fff;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     right: 0;
     left: 0;
@@ -48,11 +48,11 @@ body {
   }
   
   nav ul li a {
-    color: #fff;
+    color: #fafafa;
     text-decoration: none;
     padding: 10px 15px;
     font-family: "Fustat", sans-serif;
-    font-size:larger;
+    font-size:22px;
     font-weight: 500;
     font-style: normal;
   }
@@ -64,19 +64,12 @@ body {
     border-width: 200000px;
   }
 
-  nav ul li a:hover {
-    background-color: #8189A8;
-    border-radius: 30px;
-    /* border-color: #c6a088;
-    border-width: 200000px; */
-  }
-
   nav ul li ul.dropdown li{
     display: block;
     background: #333 ;
     padding-top: 3%;
     padding-bottom: 3%;
-    width: 150px;
+    width: 11vw;
   }
 
   nav ul li ul.dropdown{
@@ -107,7 +100,8 @@ body {
 } 
 
 .logo-2 {
-  letter-spacing: 6px;
+  letter-spacing: 1px;
+  width: fit-content;
 }
 
 .logo {
@@ -225,6 +219,11 @@ body {
   font-size: 1.5em;
 }
 
+.abt-img{
+  height: 55vh;
+  width: 35vw;
+  padding: 3% 3% 3% 3%;
+}
 .buy {
   height: 100vh;
 }

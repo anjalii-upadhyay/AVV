@@ -1,3 +1,37 @@
+<!-- <?php
+    session_start();
+
+    include("db.php");
+
+    if($_SERVER['REQUEST_METHOD'] == "POST")
+    {
+        $mail = $_POST['email'];
+        $password = $_POST['password'];
+
+         if(!empty($mail) && !empty($password) && !is_numeric($mail)){
+            $query = "select * from realE where email = '$mail' limit 1";
+            $result = mysqli_query($con, $query);
+
+            if($result){
+                if($result && mysqli_num_rows($result)>0){
+                    $user_data = mysqli_fetch_assoc($result);
+
+                    if($user_data['pass'] == $password){
+                        header("location: landingPage.php");
+                        die;
+                    }
+                }
+            }
+            echo "<script type='text/javascript'> alert('Wrong Username or Password') </script>";
+        }
+        else{
+            echo "<script type='text/javascript'> alert('Wrong Username or Password') </script>";
+        }
+    }
+
+?>
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,23 +44,21 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1 class="logo-1">PRESTIGE</h1>
-                <h6 class="logo-2">PROPERTIES</h6>
+                <h1 class="logo-1">AVV</h1>
+                <h5 class="logo-2">Available Venue Vyavastha</h5>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li>
-                      <a href="#">Services ▼</a>
+                      <a href="#">Services ▾</a>
                       <ul class= dropdown>
-                        <li><a href="/buyProp.html">Buy Property</a></li>
-                        <li><a href="/rentProp.html">Rent Property</a></li>
-                        <li><a href="/sellProp.html">Sell Property</a></li>
-                        <li><a href="#">Invest</a></li>
+                        <li><a href="hostel.html">Hostels</a></li>
+                        <li><a href="flat.html">Apartments</a></li>
                       </ul>
                     </li>
-                    <li><a href="/aboutUs.html">About Us</a></li>
-                    <li><a href="/login.html">Login / Sign Up</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="login.html">Login / Sign Up</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,13 +68,13 @@
     <div class="sign-container">
         <h1 class="abt-title">Login</h1>
 
-        <form action="#" method="POST" class="phone-signup-form">
+        <form method="POST" class="phone-signup-form">
 
-            <h2>Login using your contact number:</h2>
-            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+            <h2>Login using your email id:</h2>
+            <input type="email" name="email" placeholder="Enter your email id" required>
             <input type="password" name="password" placeholder="Enter the password" required>
 
-            <button type="submit">Sign Up</button>
+            <button type="submit">Login</button>
 
             <div class="links">
                 <b>Don't have an account?</b> <a href="signUp.html">Sign Up Now</a>
